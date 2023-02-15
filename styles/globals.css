@@ -1,9 +1,16 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+  font-family: 'Titillium Web', sans-serif;
+}
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -13,6 +20,16 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 4rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +39,10 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .footer {
+    border-color: #222;
   }
 }
