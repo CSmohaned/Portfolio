@@ -24,23 +24,29 @@ function Navbar() {
         e.preventDefault();
         let nav = document.querySelector('nav');
         let divLeft = document.querySelector('#demo-left');
+        let moonicon = document.querySelector('#moon');
+        let Sunicon = document.querySelector('#sun');
         if(Icon === 'menu' && currentTheme ==='light') {
             setIcon('close');
             divLeft.classList.replace('md:flex', 'md:hidden');
             nav.classList.replace('md:h-14','md:h-44');
+            moonicon.classList.add('md:hidden');
         }else if (Icon === 'close' && currentTheme === 'light') {
             setIcon('menu');
             nav.classList.replace('md:h-44', 'md:h-14');
             divLeft.classList.replace('md:hidden','md:flex');
+            moonicon.classList.replace('md:hidden','md:absolute');
         }
         if(Icon === 'menu' && currentTheme ==='dark') {
             setIcon('close');
             divLeft.classList.replace('md:flex', 'md:hidden');
             nav.classList.replace('md:h-14','md:h-44');
+            Sunicon.classList.add('md:hidden');
         }else if (Icon === 'close' && currentTheme === 'dark') {
             setIcon('menu');
             nav.classList.replace('md:h-44', 'md:h-14');
             divLeft.classList.replace('md:hidden','md:flex');
+            Sunicon.classList.replace('md:hidden','md:absolute');
         }
     }
       const renderThemeChanger = () => {
@@ -48,7 +54,7 @@ function Navbar() {
        };
     return(
         <>
-        <nav className="md:fixed  md:bottom-0 md:top-auto md:z-10 md:h-14 md:w-screen  sticky top-0 flex dark:bg-[#121212] bg-white flex-row h-14 justify-start items-center border-b-black border-b-2 w-screen z-30">
+        <nav className="md:fixed md:bottom-0 md:top-auto md:z-10 md:h-14 md:w-screen  sticky top-0 flex dark:bg-[#121212] bg-white flex-row h-14 justify-start items-center border-b-black border-b-2 w-screen z-30">
             {Icon=== 'close' && 
             <div className="hidden md:flex md:flex-col w-screen">
             <div className="flex flex-row justify-evenly mb-2">
@@ -85,16 +91,16 @@ function Navbar() {
                 <Link className="text-[#1A1A1A] dark:text-[#FFFF] md:hidden hover:text-purple hover:dark:text-purple mr-6 flex flex-row"  href="#portfolio" scroll={false}><FilmIcon className="h-5 w-5 mr-2 text-[#1A1A1A] dark:text-[#FFFF]"/>Portfolio</Link>
                 </motion.button>
                 <motion.button transition={spring}  whileHover={{scale: 1.1}}>
-                <Link className="text-[#1A1A1A] dark:text-[#FFFF] md:hidden hover:text-purple hover:dark:text-purple mr-6 flex flex-row"  href="#contact" scroll={false}><PaperAirplaneIcon className="h-5 w-5 mr-2 text-[#1A1A1A] dark:text-[#FFFF]"/>Contact</Link>
+                <Link className="text-[#1A1A1A] dark:text-[#FFFF] md:hidden hover:text-purple hover:dark:text-purple mr-6 flex flex-row mr-2"  href="#contact" scroll={false}><PaperAirplaneIcon className="h-5 w-5 mr-2 text-[#1A1A1A] dark:text-[#FFFF]"/>Contact</Link>
                 </motion.button>
                 <Link href="" className="md:inline flex justify-center items-center">
                   {Icon === 'menu'&& <Squares2X2Icon  name="menu-outline" onClick={(e)=>Menu(e)} className="md:bottom-3 md:inline hidden h-5 w-5 md:absolute md:right-4"/>}
                   {Icon === 'close'&& <XMarkIcon id="xicon" name="close-outline" onClick={(e)=>Menu(e)} className="md:inline hidden h-5 w-5 md:absolute md:right-4 md:bottom-3 text-purple"/>} 
                 </Link>
             </div>
+            {currentTheme ==="dark" ? (<SunIcon id='sun' className="md:right-10 md:top-5 absolute right-4 top-4 h-6 w-6" role="button" onClick={(e) => {e.preventDefault();setTheme('light')}}/>) : 
+    (<MoonIcon id="moon" className="md:top-5  absolute md:right-10 right-4 top-4 h-6 w-6" role="button" onClick={(e) => {e.preventDefault(); setTheme('dark')}}/>)}
         </nav>
-        {currentTheme ==="dark" ? (<SunIcon id='sun' className="z-20 bg-[#FFFFFF33] px-3 py-3 text-center  rounded-tl-full rounded-bl-full  fixed right-1 top-1/2 h-12 w-12 text-white" role="button" onClick={(e) => {e.preventDefault();setTheme('light')}}/>) : 
-    (<MoonIcon id="moon" className="z-20 bg-[#0000001A] px-3 py-3 text-center  rounded-tl-full rounded-bl-full fixed right-1 top-1/2 h-12 w-12" role="button" onClick={(e) => {e.preventDefault(); setTheme('dark')}}/>)}
         </>
         )
 }
