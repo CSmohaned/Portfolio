@@ -8,7 +8,7 @@ const spring = {
 }
 function Footer() {
     return(
-        <footer className="min-w-fit sm:mb-14 sm:flex sm:flex-col sm:justify-between sm:h-60  sm:items-center flex flex-row items-start justify-between px-20 h-24 w-screen pt-8 dark:bg-dark overflow-hidden">
+        <footer className="min-w-full sm:mb-14 sm:flex sm:flex-col sm:justify-between sm:h-60  sm:items-center flex flex-row items-start justify-between px-20 h-24 w-screen pt-8 dark:bg-dark overflow-hidden">
         <div className="flex flex-col sm:items-center sm:justify-center sm:pl-2">
           <h1>Mohanad</h1>
           <p>Frontend Developer</p>

@@ -30,7 +30,7 @@ const spring = {
 }
 function App () {
     return(
-        <section className="min-w-fit sm:flex sm:flex-col flex flex-row justify-center items-center bg-[#f5f8fc] dark:bg-dark w-screen h-screen" id="home">
+        <section className="min-w-full sm:flex sm:flex-col flex flex-row justify-center items-center bg-[#f5f8fc] dark:bg-dark w-screen h-screen" id="home">
         <motion.div variants={show} initial="hidden" animate="visible" className="flex flex-col justify-center items-center w-3/5 sm:pt-2 pt-28 sm:order-2 w-auto'">
           <div className="flex flex-col justify-end items-start pl-4">
           <h2 className="mb-2 font-bold text-4xl sm:text-2xl text-[#666666] dark:text-[#FFFFFF]">Hi, I`m Mohanad</h2>

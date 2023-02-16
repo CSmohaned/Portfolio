@@ -99,7 +99,7 @@ function Skills() {
     }
 }
     return(
-        <section id="skills"className="flex flex-col justify-center w-screen h-full bg-[#f5f8fc] dark:bg-dark pt-5 min-w-fit">
+        <section id="skills"className="flex flex-col justify-center w-screen h-full bg-[#f5f8fc] dark:bg-dark pt-5 min-w-full">
         <h2 className="text-center font-bold text-4xl text-[#666666] dark:text-[#FFFFFF]">Skills</h2>
         <span className="text-center font-normal text-sm pt-2">Technical Level</span>
         <motion.div variants={show} initial="hidden" animate="visible" className="py-10 px-40 sm:px-10 md:px-20 lg:px-20 md:flex md:flex-col sm:flex sm:flex-col grid grid-cols-2 gap-14 sm:items-center md:items-center md:justify-center sm:justify-start">
