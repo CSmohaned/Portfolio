@@ -91,7 +91,7 @@ function Navbar() {
                 <Link className="text-[#1A1A1A] dark:text-[#FFFF] md:hidden hover:text-purple hover:dark:text-purple mr-6 flex flex-row"  href="#portfolio" scroll={false}><FilmIcon className="h-5 w-5 mr-2 text-[#1A1A1A] dark:text-[#FFFF]"/>Portfolio</Link>
                 </motion.button>
                 <motion.button transition={spring}  whileHover={{scale: 1.1}}>
-                <Link className="text-[#1A1A1A] dark:text-[#FFFF] md:hidden hover:text-purple hover:dark:text-purple mr-6 flex flex-row mr-2"  href="#contact" scroll={false}><PaperAirplaneIcon className="h-5 w-5 mr-2 text-[#1A1A1A] dark:text-[#FFFF]"/>Contact</Link>
+                <Link className="text-[#1A1A1A] dark:text-[#FFFF] md:hidden hover:text-purple hover:dark:text-purple mr-10 flex flex-row"  href="#contact" scroll={false}><PaperAirplaneIcon className="h-5 w-5 mr-2 text-[#1A1A1A] dark:text-[#FFFF]"/>Contact</Link>
                 </motion.button>
                 <Link href="" className="md:inline flex justify-center items-center">
                   {Icon === 'menu'&& <Squares2X2Icon  name="menu-outline" onClick={(e)=>Menu(e)} className="md:bottom-3 md:inline hidden h-5 w-5 md:absolute md:right-4"/>}
@@ -99,7 +99,7 @@ function Navbar() {
                 </Link>
             </div>
             {currentTheme ==="dark" ? (<SunIcon id='sun' className="md:right-10 md:top-5 absolute right-4 top-4 h-6 w-6" role="button" onClick={(e) => {e.preventDefault();setTheme('light')}}/>) : 
-    (<MoonIcon id="moon" className="md:top-5  absolute md:right-10 right-4 top-4 h-6 w-6" role="button" onClick={(e) => {e.preventDefault(); setTheme('dark')}}/>)}
+    (<MoonIcon id="moon" className="md:top-5 ml-3 absolute md:right-10 right-4 top-4 h-6 w-6" role="button" onClick={(e) => {e.preventDefault(); setTheme('dark')}}/>)}
         </nav>
         </>
         )
