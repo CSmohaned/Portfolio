@@ -36,7 +36,7 @@ function Services() {
         <span className="text-center font-normal text-sm pt-2">What I offer</span>
         <motion.div variants={show} initial="hiddenPhoto" animate="visiblePhoto" className='flex flex-row justify-evenly items-center md:flex-col'>
         <div className="flex justify-center w-full p-8">
-        <motion.div transition={spring}  whileHover={{scale: 1.1}} className="block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
+        <motion.div transition={spring}  whileHover={{scale: 1.1}} className="z-0 block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
         <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2"><FaReact className="text-purple h-7 w-7"/></h5>
         <h2 className="text-[#1A1A1A] dark:text-[#FFFF] text-base mb-4">Dynamic Websites Development</h2>
         <div className='flex flex-row justify-start items-center'>
@@ -44,7 +44,41 @@ function Services() {
         <ArrowSmallRightIcon className='text-purple w-4 h-4 hover:translate-x-1'/>
         </div>
       </motion.div>
-      <div className="z-10 modal fade fixed top-10 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
+      </div>
+      <div className="flex justify-center w-full p-8">
+      <motion.div transition={spring} whileHover={{scale: 1.1}} className="z-0 block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
+        <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2"><FaLayerGroup className="text-purple h-7 w-7"/></h5>
+        <h2 className="text-[#1A1A1A] dark:text-[#FFFF] text-base mb-4">System development to manage your organization</h2>
+        <div className='flex flex-row justify-start items-center'>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2" className=" inline-block px-1 py-2.5 font-medium text-xs leading-tight uppercase text-[#7E7E7E] dark:text-[#A9AFC3]">View more</button>
+        <ArrowSmallRightIcon className='text-purple w-4 h-4 hover:translate-x-1'/>
+        </div>
+      </motion.div>
+      </div>
+    </motion.div>
+    <motion.div variants={show} initial="hiddenPhoto" animate="visiblePhoto" className='flex flex-row justify-evenly items-center md:flex-col'>
+    <div className="flex justify-center w-full p-8">
+    <motion.div transition={spring}  whileHover={{scale: 1.1}} className="z-0 block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
+        <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2"><FaIndent className="text-purple h-7 w-7"/></h5>
+        <h2 className="text-[#1A1A1A] dark:text-[#FFFF] text-base mb-4">UI/UX Development</h2>
+        <div className='flex flex-row justify-start items-center'>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3" className=" inline-block px-1 py-2.5 font-medium text-xs leading-tight uppercase text-[#7E7E7E] dark:text-[#A9AFC3]">View more</button>
+        <ArrowSmallRightIcon className='text-purple w-4 h-4 hover:translate-x-1'/>
+        </div>
+      </motion.div>
+    </div>
+    <div className="flex justify-center w-full p-8">
+    <motion.div transition={spring}  whileHover={{scale: 1.1}} className="z-0 block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
+        <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2"><FaCode className="text-purple h-7 w-7"/></h5>
+        <h2 className="text-[#1A1A1A] dark:text-[#FFFF] text-base mb-4">Maintenance and Support</h2>
+        <div className='flex flex-row justify-start items-center'>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter4" className=" inline-block px-1 py-2.5 font-medium text-xs leading-tight uppercase text-[#7E7E7E] dark:text-[#A9AFC3]">View more</button>
+        <ArrowSmallRightIcon className='text-purple w-4 h-4 hover:translate-x-1'/>
+        </div>
+      </motion.div>
+      </div>
+    </motion.div>
+    <div className="z-10 modal fade fixed sm:top-0 top-5 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
   <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white dark:bg-dark bg-clip-padding rounded-md outline-none text-current">
       <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 rounded-t-md">
@@ -71,7 +105,7 @@ function Services() {
       <div
         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 rounded-b-md">
         <button type="button"
-          className="inline-block px-6 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block px-6 mb-2 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
           data-bs-dismiss="modal">
           Close
         </button>
@@ -79,17 +113,7 @@ function Services() {
     </div>
   </div>
 </div>
-      </div>
-      <div className="flex justify-center w-full p-8">
-      <motion.div transition={spring} whileHover={{scale: 1.1}} className="block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
-        <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2"><FaLayerGroup className="text-purple h-7 w-7"/></h5>
-        <h2 className="text-[#1A1A1A] dark:text-[#FFFF] text-base mb-4">System development to manage your organization</h2>
-        <div className='flex flex-row justify-start items-center'>
-        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2" className=" inline-block px-1 py-2.5 font-medium text-xs leading-tight uppercase text-[#7E7E7E] dark:text-[#A9AFC3]">View more</button>
-        <ArrowSmallRightIcon className='text-purple w-4 h-4 hover:translate-x-1'/>
-        </div>
-      </motion.div>
-      <div className="z-10 modal fade fixed top-10 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter2" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
+    <div className="z-10 modal fade fixed sm:top-0 top-5 left-0 hidden w-screen h-screen outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter2" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
   <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white dark:bg-dark bg-clip-padding rounded-md outline-none text-current">
       <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 rounded-t-md">
@@ -115,7 +139,7 @@ function Services() {
       <div
         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 rounded-b-md">
         <button type="button"
-          className="inline-block px-6 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block px-6 mb-2 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
           data-bs-dismiss="modal">
           Close
         </button>
@@ -123,19 +147,7 @@ function Services() {
     </div>
   </div>
 </div>
-      </div>
-    </motion.div>
-    <motion.div variants={show} initial="hiddenPhoto" animate="visiblePhoto" className='flex flex-row justify-evenly items-center md:flex-col'>
-    <div className="flex justify-center w-full p-8">
-    <motion.div transition={spring}  whileHover={{scale: 1.1}} className="block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
-        <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2"><FaIndent className="text-purple h-7 w-7"/></h5>
-        <h2 className="text-[#1A1A1A] dark:text-[#FFFF] text-base mb-4">UI/UX Development</h2>
-        <div className='flex flex-row justify-start items-center'>
-        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3" className=" inline-block px-1 py-2.5 font-medium text-xs leading-tight uppercase text-[#7E7E7E] dark:text-[#A9AFC3]">View more</button>
-        <ArrowSmallRightIcon className='text-purple w-4 h-4 hover:translate-x-1'/>
-        </div>
-      </motion.div>
-      <div className="z-10 modal fade fixed top-10 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter3" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
+<div className="z-10 modal fade fixed sm:top-0 top-5 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter3" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
   <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white dark:bg-dark bg-clip-padding rounded-md outline-none text-current">
       <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 rounded-t-md">
@@ -162,7 +174,7 @@ function Services() {
       <div
         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 rounded-b-md">
         <button type="button"
-          className="inline-block px-6 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block px-6 mb-2 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
           data-bs-dismiss="modal">
           Close
         </button>
@@ -170,17 +182,7 @@ function Services() {
     </div>
   </div>
 </div>
-    </div>
-    <div className="flex justify-center w-full p-8">
-    <motion.div transition={spring}  whileHover={{scale: 1.1}} className="block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
-        <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2"><FaCode className="text-purple h-7 w-7"/></h5>
-        <h2 className="text-[#1A1A1A] dark:text-[#FFFF] text-base mb-4">Maintenance and Support</h2>
-        <div className='flex flex-row justify-start items-center'>
-        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter4" className=" inline-block px-1 py-2.5 font-medium text-xs leading-tight uppercase text-[#7E7E7E] dark:text-[#A9AFC3]">View more</button>
-        <ArrowSmallRightIcon className='text-purple w-4 h-4 hover:translate-x-1'/>
-        </div>
-      </motion.div>
-      <div className="z-10 modal fade fixed top-10 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter4" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
+<div className="z-10 modal fade fixed sm:top-0 top-5 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter4" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
   <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white dark:bg-dark bg-clip-padding rounded-md outline-none text-current">
       <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 rounded-t-md">
@@ -205,7 +207,7 @@ function Services() {
       <div
         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 rounded-b-md">
         <button type="button"
-          className="inline-block px-6 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block px-6 mb-2 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
           data-bs-dismiss="modal">
           Close
         </button>
@@ -213,8 +215,6 @@ function Services() {
     </div>
   </div>
 </div>
-      </div>
-    </motion.div>
         </section>
         )
 }

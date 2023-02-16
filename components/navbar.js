@@ -95,7 +95,7 @@ function Navbar() {
                 <Link href="" className="md:inline flex justify-center items-center ml-5">
                   {currentTheme !=="dark" && <MoonIcon id="moon" className="md:fixed md:right-10 md:bottom-2 absolute right-4 w-6 h-6 hover:text-gray-900 " role="button" onClick={(e) => {e.preventDefault(); setTheme('dark')}}/>}   
                   {currentTheme ==="dark" && <SunIcon id='sun' className="md:fixed md:right-10 md:bottom-2 absolute  right-4 w-6 h-6 hover:text-yellow-500 " role="button" onClick={(e) => {e.preventDefault();setTheme('light')}}/>} 
-                  {Icon === 'menu'&& <Squares2X2Icon  name="menu-outline" onClick={(e)=>Menu(e)} className="md:inline hidden h-5 w-5 md:fixed md:right-3"/>}
+                  {Icon === 'menu'&& <Squares2X2Icon  name="menu-outline" onClick={(e)=>Menu(e)} className="md:bottom-2.5 md:inline hidden h-5 w-5 md:fixed md:right-3"/>}
                   {Icon === 'close'&& <XMarkIcon id="xicon" name="close-outline" onClick={(e)=>Menu(e)} className="md:inline hidden h-5 w-5 md:fixed md:right-3 md:bottom-1 text-purple"/>} 
                 </Link>
             </div>

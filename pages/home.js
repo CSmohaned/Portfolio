@@ -39,7 +39,7 @@ function App () {
           <motion.button transition={spring}  whileHover={{scale: 1.1}}>
             <Link className="bg-purple flex flex-row justify-center items-center p-2 rounded-lg text-[#1A1A1A] dark:text-[#FFFF]" href="#contact" scroll={false}>Contact Me < PaperAirplaneIcon className='w-5 h-5 hover:translate-x-1 text-[#1A1A1A] dark:text-[#FFFF]'/></Link>
           </motion.button>
-          <div className="flex flex-row justify-center items-center p-2 hover:translate-y-1 mt-24 sm:mt-0">
+          <div className="flex flex-row justify-center items-center p-2 hover:translate-y-1 mt-24 sm:mt-2">
           <svg stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 17 17" className="ScrollBtn_icon__DSLJ+ text-purple" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M8.5 0c-3.033 0-5.5 2.467-5.5 5.5v6c0 3.033 2.467 5.5 5.5 5.5s5.5-2.467 5.5-5.5v-6c0-3.033-2.467-5.5-5.5-5.5zM13 11.5c0 2.481-2.019 4.5-4.5 4.5s-4.5-2.019-4.5-4.5v-6c0-2.481 2.019-4.5 4.5-4.5s4.5 2.019 4.5 4.5v6zM8.5 3.5c-0.827 0-1.5 0.673-1.5 1.5v2c0 0.827 0.673 1.5 1.5 1.5s1.5-0.673 1.5-1.5v-2c0-0.827-0.673-1.5-1.5-1.5zM9 7c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5v-2c0-0.276 0.224-0.5 0.5-0.5s0.5 0.224 0.5 0.5v2z"></path></svg>
           <Link className="text-[#1A1A1A] dark:text-[#FFFF]" href="#about" scroll={false}>Scroll down</Link>
           <ArrowSmallDownIcon className='h-4 w-4 text-purple'/>
