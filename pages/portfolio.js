@@ -10,7 +10,7 @@ const show = {
 visible: {
     opacity: 1,
     y: "0px",
-    transition: {delay: .5,duration: 2}
+    transition: {delay: .5}
 }
 }
 const spring = {
@@ -20,7 +20,7 @@ const spring = {
 }
 function Portfolio() {
     return(
-  <section id="portfolio"className="flex-col flex justify-center items-center  w-screen max-h-max py-10 bg-[#f5f8fc] dark:bg-silver pt-5 overflow-hidden">
+  <section id="portfolio"className="flex-col flex justify-center items-center  w-screen max-h-max py-10 bg-[#f5f8fc] dark:bg-silver pt-5 overflow-hidden min-w-fit">
     <h2 className="text-center font-bold text-4xl text-[#666666] dark:text-[#FFFFFF]">My Projects</h2>
         <span className="text-center font-normal text-sm pt-2">portfolio</span>
         <motion.div variants={show} initial="hidden" animate="visible"  transition={spring}  whileHover={{scaleX: 1.1}}  id="carouselExampleCaptions" className="carousel slide relative border rounded-2xl bg-[#1A1A1A] dark:bg-dark pt-5 mt-10 pb-8"  data-bs-ride="carousel">
@@ -42,60 +42,14 @@ function Portfolio() {
   </div>
   <div className="carousel-inner relative w-full overflow-hidden">
     <div className="carousel-item active relative float-left w-full">
-    <div className="grid grid-rows-3 grid-flow-col gap-4 pt-2">
-  <div className="row-span-2 grid grid-cols-3 gap-4 px-4">
-    <div className="">
-      <div className="lightbox">
-        <Image
-          src="/web3.png"
-          alt="Gallery image 1"
-          className="ecommerce-gallery-main-img active max-w-full h-auto rounded-full hover:scale-95 transition duration-300 ease-in-out"
-          width={235} height={250} priority
-        />
-      </div>
-    </div>
-    <div className="">
-      <Image
-        src="/web4.png"
-        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/14a.webp"
-        alt="Gallery image 1"
-        className="active max-w-full h-auto rounded-full hover:scale-95 transition duration-300 ease-in-out"
-        width={235} height={250} priority
-      />
-    </div>
-    <div className="">
-      <Image
-        src="/web5.png"
-        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
-        alt="Gallery image 2"
-        className="active max-w-full h-auto rounded-full hover:scale-95 transition duration-300 ease-in-out"
-        width={235} height={250} priority
-      />
-    </div>
-    <div className="">
-      <Image
-        src="/web6.png"
-        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
-        alt="Gallery image 3"
-        className="active max-w-full h-auto rounded-full hover:scale-95 transition duration-300 ease-in-out"
-        width={235} height={250} priority
-      />
-    </div>
-    <div className="">
+    <div className="grid grid-rows-3 grid-flow-col  pt-2">
+  <div className="row-span-2 grid grid-cols-3 px-14 py-14">
+    <div className="w-full h-full">
       <Image
         src="/web7.png"
         data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/15a.webp"
         alt="Gallery image 4"
-        className="active max-w-full h-auto rounded-full hover:scale-95 transition duration-300 ease-in-out"
-        width={235} height={250} priority
-      />
-    </div>
-    <div className="">
-      <Image
-        src="/web8.png"
-        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/15a.webp"
-        alt="Gallery image 4"
-        className="active max-w-full h-auto rounded-full hover:scale-95 transition duration-300 ease-in-out"
+        className="active max-full h-full rounded-full hover:scale-95 transition duration-300 ease-in-out"
         width={235} height={250} priority
       />
     </div>

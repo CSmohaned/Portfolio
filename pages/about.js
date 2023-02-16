@@ -17,7 +17,7 @@ const show = {
   visible: {
       opacity: 1,
       y: "0px",
-      transition: {delay: .5,duration: 2}
+      transition: {delay: .5}
   }
   }
   const spring = {
@@ -27,7 +27,7 @@ const show = {
   }
 function About() {
     return(
-        <section id="about" className="flex flex-col justify-start items-center w-screen h-full pb-5 bg-light dark:bg-dark pt-5">
+        <section id="about" className="min-w-fit flex flex-col justify-start items-center w-screen h-full pb-5 bg-light dark:bg-dark pt-5">
     <h2 className="text-center font-bold text-4xl text-[#666666] dark:text-[#FFFFFF]">About Me</h2>
     <span className="text-center font-normal text-sm pt-2 sm:pb-6 text-[#1A1A1A] dark:text-[#FFFF]">Introduction</span>
     <motion.div variants={show} initial="hidden" animate="visible" className='sm:flex sm:flex-col md:items-start flex flex-row justify-start items-center px-4'>

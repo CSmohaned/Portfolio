@@ -20,7 +20,7 @@ visiblePhoto: {
 visible: {
     opacity: 1,
     y: "0px",
-    transition: {delay: .5,duration: 2}
+    transition: {delay: .5}
 }
 }
 const spring = {
@@ -30,8 +30,8 @@ const spring = {
 }
 function App () {
     return(
-        <section className="sm:w-max sm:flex sm:flex-col flex flex-row justify-center items-center bg-[#f5f8fc] dark:bg-dark w-screen h-screen" id="home">
-        <motion.div variants={show} initial="hidden" animate="visible" className="flex flex-col justify-center items-center w-3/5 sm:pt-2 pt-28 sm:order-2 sm:w-screen">
+        <section className="min-w-fit sm:flex sm:flex-col flex flex-row justify-center items-center bg-[#f5f8fc] dark:bg-dark w-screen h-screen" id="home">
+        <motion.div variants={show} initial="hidden" animate="visible" className="flex flex-col justify-center items-center w-3/5 sm:pt-2 pt-28 sm:order-2 w-auto'">
           <div className="flex flex-col justify-end items-start pl-4">
           <h2 className="mb-2 font-bold text-4xl sm:text-2xl text-[#666666] dark:text-[#FFFFFF]">Hi, I`m Mohanad</h2>
           <h3 className="mb-2 font-normal text-lg sm:text-base text-[#1A1A1A] dark:text-[#FFFF]">Frontend developer</h3>
@@ -46,7 +46,7 @@ function App () {
           </div>
           </div>
           </motion.div>
-        <motion.div variants={show} initial="hiddenPhoto" animate="visiblePhoto" className="flex flex-col justify-start items-center text-center  w-2/5 overflow-hidden bg-no-repeat bg-cover sm:justify-center sm:w-screen">
+        <motion.div variants={show} initial="hiddenPhoto" animate="visiblePhoto" className="flex flex-col justify-start items-center text-center  w-2/5 overflow-hidden bg-no-repeat bg-cover sm:justify-center">
         <Image className='text-center bg-purple rounded-full sm:w-48 sm:h-52 hover:scale-95 transition duration-300 ease-in-out' src="/mo11.png" alt="Vercel Logo" width={233} height={200} priority />
          </motion.div>
       </section>

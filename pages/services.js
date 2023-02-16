@@ -15,12 +15,12 @@ hiddenPhoto: {
 visiblePhoto: {
   opacity: 1,
   x: "0px",
-  transition: {delay: 1.5,duration: 2}
+  transition: {delay: 1.5}
 },
 visible: {
     opacity: 1,
     y: "0px",
-    transition: {delay: .5,duration: 2}
+    transition: {delay: .5}
 }
 }
 const spring = {
@@ -31,7 +31,7 @@ const spring = {
 
 function Services() {
     return(
-        <section id="services"className="flex flex-col justify-start w-screen h-full bg-light dark:bg-dark pt-5">
+        <section id="services"className="flex flex-col justify-start w-screen h-full bg-light dark:bg-dark pt-5 min-w-fit">
         <h2 className="text-center font-bold text-4xl text-[#666666] dark:text-[#FFFFFF]">Services</h2>
         <span className="text-center font-normal text-sm pt-2">What I offer</span>
         <motion.div variants={show} initial="hiddenPhoto" animate="visiblePhoto" className='flex flex-row justify-evenly items-center md:flex-col'>

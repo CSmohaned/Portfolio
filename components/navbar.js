@@ -10,13 +10,13 @@ const spring = {
         damping: 10,
         stiffness: 100
       }
+      
 function Navbar() {
     
     const {systemTheme , theme, setTheme} = useTheme ();
-    const currentTheme = theme === "system" ? systemTheme : theme ;
+    const currentTheme = theme === "dark" ? systemTheme : theme ;
     const [mounted, setMounted] = useState(false);
     const [Icon, setIcon] = useState('menu');
-    
     useEffect(() =>{
         setMounted(true);
       },[Icon,mounted,currentTheme])
@@ -26,6 +26,8 @@ function Navbar() {
         let divLeft = document.querySelector('#demo-left');
         let moonicon = document.querySelector('#moon');
         let Sunicon = document.querySelector('#sun');
+        console.log(moonicon);
+        console.log(Sunicon)
         if(Icon === 'menu' && currentTheme ==='light') {
             setIcon('close');
             divLeft.classList.replace('md:flex', 'md:hidden');
@@ -35,7 +37,7 @@ function Navbar() {
             setIcon('menu');
             nav.classList.replace('md:h-44', 'md:h-14');
             divLeft.classList.replace('md:hidden','md:flex');
-            moonicon.classList.replace('md:hidden','md:absolute');
+            moonicon.classList.replace('md:hidden','md:inline');
         }
         if(Icon === 'menu' && currentTheme ==='dark') {
             setIcon('close');
@@ -46,7 +48,7 @@ function Navbar() {
             setIcon('menu');
             nav.classList.replace('md:h-44', 'md:h-14');
             divLeft.classList.replace('md:hidden','md:flex');
-            Sunicon.classList.replace('md:hidden','md:absolute');
+            Sunicon.classList.replace('md:hidden','md:inline');
         }
     }
       const renderThemeChanger = () => {
@@ -54,7 +56,7 @@ function Navbar() {
        };
     return(
         <>
-        <nav className="md:fixed md:bottom-0 md:top-auto md:z-10 md:h-14 md:w-screen  sticky top-0 flex dark:bg-[#121212] bg-white flex-row h-14 justify-start items-center border-b-black border-b-2 w-screen z-30">
+        <nav className="min-w-fit md:fixed md:bottom-0 md:top-auto md:z-10 md:h-14 md:w-screen  sticky top-0 flex dark:bg-[#121212] bg-white flex-row h-14 justify-start items-center border-b-black border-b-2 w-screen z-30">
             {Icon=== 'close' && 
             <div className="hidden md:flex md:flex-col w-screen">
             <div className="flex flex-row justify-evenly mb-2">
@@ -70,8 +72,8 @@ function Navbar() {
             </div>
             }
             <div id="demo-left" className="md:flex w-2/5 pl-3">
-            {currentTheme !=="dark" && <Image alt="Gallery image 1" src="/Mo-logos_black.png" width={180} height={14} />}
-            {currentTheme ==="dark" && <Image alt="LogoLight" src="/Mo-logos_white.png" width={180} height={14} />}
+            {currentTheme !=="dark" && <Image alt="Mo-logos_white" src="/Mo-logos_black.png" width={180} height={14} />}
+            {currentTheme ==="dark" && <Image alt="Mo-logos_black" src="/Mo-logos_white.png" width={180} height={14} />}
             
             </div>
             <div id="demo-right" className="md:flex flex flex-row justify-end items-center">
