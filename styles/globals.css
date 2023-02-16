@@ -11,6 +11,7 @@ body {
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -20,8 +21,6 @@ a {
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 .footer {
   display: flex;

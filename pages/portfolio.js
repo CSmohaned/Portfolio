@@ -2,6 +2,17 @@ import Image from "next/image";
 import Link from 'next/link';
 import {BsGithub} from "react-icons/bs";
 import { motion} from 'framer-motion';
+const show = {
+  hidden: {
+    opacity: 0,
+    y: "-100vh"
+},
+visible: {
+    opacity: 1,
+    y: "0px",
+    transition: {delay: .5,duration: 2}
+}
+}
 const spring = {
   type: "spring",
   damping: 10,
@@ -9,10 +20,10 @@ const spring = {
 }
 function Portfolio() {
     return(
-  <section id="portfolio"className="flex-col flex justify-center items-center  w-screen max-h-max py-32 bg-[#f5f8fc] dark:bg-silver pt-20 overflow-hidden">
+  <section id="portfolio"className="flex-col flex justify-center items-center  w-screen max-h-max py-10 bg-[#f5f8fc] dark:bg-silver pt-5 overflow-hidden">
     <h2 className="text-center font-bold text-4xl text-[#666666] dark:text-[#FFFFFF]">My Projects</h2>
         <span className="text-center font-normal text-sm pt-2">portfolio</span>
-        <motion.div transition={spring}  whileHover={{scaleX: 1.1}}  id="carouselExampleCaptions" className="carousel slide relative border rounded-2xl bg-[#dd0526] dark:bg-dark pt-5 mt-10 pb-8"  data-bs-ride="carousel">
+        <motion.div variants={show} initial="hidden" animate="visible"  transition={spring}  whileHover={{scaleX: 1.1}}  id="carouselExampleCaptions" className="carousel slide relative border rounded-2xl bg-[#1A1A1A] dark:bg-dark pt-5 mt-10 pb-8"  data-bs-ride="carousel">
      <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
     <button
       type="button"
@@ -96,7 +107,7 @@ function Portfolio() {
      <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="inline-block sm:px-3 px-6 py-2 bg-[#0f57ff] text-black dark:text-[#FFFF] mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">MongoDb</motion.button>
      <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="flex flex-row sm:px-3 px-6 py-2 bg-[#0f57ff] text-black dark:text-[#FFFF] mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">GitHub <Link href="https://github.com/CSmohaned/A-Book-Tracking-App" scroll={false}><BsGithub className='inline ml-2 mr-3 hover:translate-x-1'/></Link></motion.button>
   </div>
-  <p className="text-center mt-2 mb-2 text-black dark:text-[#FFFF]">Project managment all tasks in your projects</p>
+  <p className="text-center mt-2 mb-2 text-[#FFFF] dark:text-[#FFFF]">Project managment all tasks in your projects</p>
   </div>
 </div>
     </div>
@@ -129,7 +140,7 @@ function Portfolio() {
      <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="inline-block sm:px-3 px-6 py-2 bg-[#0f57ff] text-black mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">Project With Udacity</motion.button>
      <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="flex flex-row sm:px-3 px-6 py-2 bg-[#0f57ff] text-black mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">GitHub <Link href="https://github.com/CSmohaned/Task-Management" scroll={false}><BsGithub className='inline ml-2 mr-3 hover:translate-x-1'/></Link></motion.button>
   </div>
-  <p className="text-center mt-2 mb-2 text-black dark:text-[#FFFF]">A Book Tracking App</p>
+  <p className="text-center mt-2 mb-2 text-[#FFFF] dark:text-[#FFFF]">A Book Tracking App</p>
   </div>
 </div>
     </div>
