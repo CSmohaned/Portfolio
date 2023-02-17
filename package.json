@@ -22,7 +22,8 @@
     "react-icons": "^4.6.0",
     "react-offcanvas-menu-component": "^1.0.1",
     "react-scroll-button": "^2.0.0",
-    "tw-elements": "^1.0.0-alpha12"
+    "tw-elements": "^1.0.0-alpha12",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

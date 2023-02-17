@@ -4,10 +4,9 @@
 
 html{
   scroll-behavior: smooth;
-  font-family: 'Titillium Web', sans-serif;
-}
+  font-family: 'Poppins', sans-serif;}
 body,html {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
   padding: 0;
@@ -32,7 +31,34 @@ a {
   justify-content: center;
   align-items: center;
 }
+  .writer-text {
+      display: inline-block;
+      overflow: hidden;
+      animation: typing 5s steps(30, end), blink .75s step-end infinite;
+      white-space: nowrap;
+      font-size: 30px;
+      font-weight: 700;
+      border-right: 4px solid #0070f3;
+      box-sizing: border-box;
+}
 
+  @keyframes typing {
+      from { 
+          width: 0% 
+      }
+      to { 
+          width: 100% 
+      }
+  }
+
+  @keyframes blink {
+      from, to { 
+          border-color: transparent 
+      }
+      50% { 
+          border-color: #0070f3; 
+      }
+  }
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
