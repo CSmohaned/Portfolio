@@ -15,7 +15,6 @@ export default function Home() {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <title>Mohanad Portfolio</title>
         <link rel="icon" href="/Mo-logos_black.png" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
     </Head>
     <App/>
     <About/>
