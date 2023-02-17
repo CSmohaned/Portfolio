@@ -20,7 +20,7 @@ const spring = {
 }
 function Portfolio() {
     return(
-  <section id="portfolio"className="flex-col flex justify-center items-center  w-screen max-h-max py-10 bg-[#f5f8fc] dark:bg-silver pt-5 overflow-hidden min-w-full">
+  <section id="portfolio"className="flex-col flex justify-center items-center  w-screen max-h-max py-10 bg-[#f5f8fc] dark:bg-silver pt-5 overflow-hidden">
     <h2 className="text-center font-bold text-4xl text-[#666666] dark:text-[#FFFFFF]">My Projects</h2>
         <span className="text-center font-normal text-sm pt-2">portfolio</span>
         <motion.div variants={show} initial="hidden" animate="visible"  transition={spring}  whileHover={{scaleX: 1.1}}  id="carouselExampleCaptions" className="carousel slide relative border rounded-2xl bg-[#1A1A1A] dark:bg-dark pt-5 mt-10 pb-8"  data-bs-ride="carousel">

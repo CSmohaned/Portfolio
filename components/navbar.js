@@ -14,7 +14,7 @@ const spring = {
 function Navbar() {
     
     const {systemTheme , theme, setTheme} = useTheme ();
-    const currentTheme = theme === "dark" ? systemTheme : theme ;
+    const currentTheme = theme === "theme" ? systemTheme : theme ;
     const [mounted, setMounted] = useState(false);
     const [Icon, setIcon] = useState('menu');
     useEffect(() =>{
@@ -58,7 +58,7 @@ function Navbar() {
         <>
         <nav className="w-screen md:fixed md:bottom-0 md:top-auto md:z-10 md:h-14 sticky top-0 flex dark:bg-[#121212] bg-white flex-row h-14 justify-start items-center border-b-black border-b-2 z-30">
             {Icon=== 'close' && 
-            <div className="hidden md:flex md:flex-col">
+            <div className="hidden md:flex md:flex-col w-screen">
             <div className="flex flex-row justify-evenly mb-2">
                 <Link className="hover:text-purple" href="#home"scroll={false}><HomeIcon className="h-6 w-6"/>Home</Link>
                 <Link className="hover:text-purple" href="#about"scroll={false}><UserIcon className="h-6 w-6"/>About</Link>
