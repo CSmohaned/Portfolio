@@ -34,7 +34,7 @@ function App () {
         <section className="sm:flex sm:flex-col flex flex-row justify-center items-center bg-[#f5f8fc] dark:bg-dark w-screen h-screen" id="home">
         <motion.div variants={show} initial="hidden" animate="visible" className="flex flex-col justify-center items-center w-3/5 sm:pt-2 pt-28 sm:order-2">
           <div className="flex flex-col justify-end items-start pl-4">
-          <h2 className="animation mb-2 font-bold text-4xl sm:text-2xl text-[#666666] dark:text-[#FFFFFF]">Hi, I`m Mohanad</h2>
+          <h2 className="typewriter animate-loop max-w-fit mb-2 font-bold text-4xl sm:text-2xl text-[#666666] dark:text-[#FFFFFF]">Hi, I`m Mohanad</h2>
           <h3 className="mb-2 font-normal text-lg sm:text-base text-[#1A1A1A] dark:text-[#FFFF]">Frontend developer</h3>
           <p className="mb-4 font-normal text-sm sm:text-xs sm:mb-2 text-[#7E7E7E] dark:text-[#A9AFC3]">I make reactive web application, producing high level quality work.</p>
           <motion.button transition={spring}  whileHover={{scale: 1.1}}>
