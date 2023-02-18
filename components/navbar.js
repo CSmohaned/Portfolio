@@ -56,7 +56,7 @@ function Navbar() {
        };
     return(
         <>
-        <nav className="w-screen md:fixed md:bottom-0 md:top-auto md:z-10 md:h-14 sticky top-0 flex dark:bg-[#121212] bg-white flex-row h-14 justify-start items-center border-b-black border-b-2 z-30">
+        <nav className="w-screen md:fixed md:bottom-0 md:top-auto md:z-10 md:h-14 fixed top-0 flex dark:bg-[#121212] bg-white flex-row h-14 justify-start items-center border-b-black border-b-2 z-30">
             {Icon=== 'close' && 
             <div className="hidden md:flex md:flex-col w-screen">
             <div className="flex flex-row justify-evenly mb-2">

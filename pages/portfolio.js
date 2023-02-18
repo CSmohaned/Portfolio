@@ -39,6 +39,12 @@ function Portfolio() {
       data-bs-slide-to="1"
       aria-label="Slide 2"
     ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
   </div>
   <div className="carousel-inner relative w-full overflow-hidden">
     <div className="carousel-item active relative float-left w-full">
@@ -50,7 +56,7 @@ function Portfolio() {
         data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/15a.webp"
         alt="Gallery image 4"
         className="active w-full h-full rounded-full hover:scale-95 transition duration-300 ease-in-out"
-        width={335} height={350} priority
+        width={315} height={200} priority
       />
     </div>
   </div>
@@ -81,13 +87,36 @@ function Portfolio() {
   <div className="">
      <div className="flex justify-center items-center mt-3">
      <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="inline-block sm:px-3 px-6 py-2 bg-[#0f57ff] text-[#fff] mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">ReactJs</motion.button>
-     <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="inline-block sm:px-3 px-6 py-2 bg-[#0f57ff] text-[#fff] mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">Project With Udacity</motion.button>
+     <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="inline-block sm:px-3 px-6 py-2 bg-[#0f57ff] text-[#fff] mr-2 font-medium text-xs  leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">Udacity Project</motion.button>
      <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="flex flex-row sm:px-3 px-6 py-2 bg-[#0f57ff] text-[#fff] mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">GitHub <Link href="https://github.com/CSmohaned/Task-Management" scroll={false}><BsGithub className='inline ml-2 mr-3 hover:translate-x-1'/></Link></motion.button>
   </div>
   <p className="text-center mt-2 mb-2 text-[#FFFF] dark:text-[#FFFF]">A Book Tracking App</p>
   </div>
 </div>
     </div>
+    <div className="carousel-item relative float-left w-full">
+    <div className="grid grid-rows-3 grid-flow-col gap-4 p-8">
+    <div className="row-span-2 grid grid-cols-2 gap-4">
+    <div className="w-full h-full col-span-3">
+      <Image
+        src="/Capture.png"
+        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/14a.webp"
+        alt="Gallery image 1"
+        className="active w-full h-auto rounded-full hover:scale-95 transition duration-300 ease-in-out"
+        width={335} height={250} priority
+      />
+    </div>
+  </div>
+  <div className="">
+     <div className="flex justify-center items-center mt-3">
+     <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="inline-block sm:px-3 px-6 py-2 bg-[#0f57ff] text-[#fff] mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">ReactJs</motion.button>
+     <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="inline-block sm:px-3 px-6 py-2 bg-[#0f57ff] text-[#fff] mr-2 font-medium text-xs  leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">Bosta Project</motion.button>
+     <motion.button transition={spring}  whileHover={{scale: 1.1}} type="button" className="flex flex-row sm:px-3 px-6 py-2 bg-[#0f57ff] text-[#fff] mr-2 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg">GitHub <Link href="https://github.com/CSmohaned/bosta-track-shipment" scroll={false}><BsGithub className='inline ml-2 mr-3 hover:translate-x-1'/></Link></motion.button>
+  </div>
+  <p className="text-center mt-2 mb-2 text-[#FFFF] dark:text-[#FFFF]">A Track Shipment App</p>
+  </div>
+</div>
+    </div>    
   </div>
   <button
     className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
