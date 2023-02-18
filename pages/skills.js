@@ -7,21 +7,21 @@ import { motion} from 'framer-motion';
 const show = {
   hidden: {
     opacity: 0,
-    y: "100vh"
+    x: "100vw"
 },
 hiddenPhoto: {
   opacity: 0,
-    x: "100vw"
+    x: "-100vw"
 },
 visiblePhoto: {
   opacity: 1,
   x: "0px",
-  transition: {delay: 1.5}
+  transition: {delay: 1.5,duration: 1}
 },
 visible: {
     opacity: 1,
-    y: "0px",
-    transition: {delay: .5}
+    x: "0px",
+    transition: {delay: .5,duration: 1.5}
 }
 }
 const spring = {

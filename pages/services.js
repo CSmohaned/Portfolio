@@ -4,23 +4,14 @@ import { FaReact,FaCode,FaLayerGroup,FaIndent } from "react-icons/fa";
 import { motion} from 'framer-motion';
 
 const show = {
-  hidden: {
-    opacity: 0,
-    y: "100vh"
-},
-hiddenPhoto: {
+ hiddenPhoto: {
   opacity: 0,
     x: "100vw"
 },
 visiblePhoto: {
   opacity: 1,
   x: "0px",
-  transition: {delay: 1.5}
-},
-visible: {
-    opacity: 1,
-    y: "0px",
-    transition: {delay: .5}
+  transition: {delay: 1.5,duration:1.5}
 }
 }
 const spring = {
@@ -81,9 +72,9 @@ function Services() {
     <div className="z-10 modal fade fixed sm:top-0 top-5 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
   <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white dark:bg-dark bg-clip-padding rounded-md outline-none text-current">
-      <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 rounded-t-md">
+      <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 pt-6 md:pt-2 rounded-t-md">
       <button type="button"
-          className="btn-close border-4 border-midnight dark:border-white rounded-full box-content w-4 h-4 p-1 dark:text-white text-black opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+          className="btn-close border-4 border-purple dark:border-white rounded-full box-content w-4 h-4 p-1 dark:text-white text-black opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
           data-bs-dismiss="modal" aria-label="Close"></button>
       <Image className='text-center w-full mt-4 rounded-2xl  hover:scale-95 transition duration-300 ease-in-out' src="/dynamic-web-pages.png" alt="Vercel Logo" width={333} height={200} priority />
         <h5 className="text-xl font-medium leading-normal text-[#0f172a] dark:text-[#FFFFFF]" id="exampleModalScrollableLabel">
@@ -105,7 +96,7 @@ function Services() {
       <div
         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 rounded-b-md">
         <button type="button"
-          className="inline-block px-6 mb-2 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block px-6 mb-2 py-2.5 bg-purple text-[#000] dark:bg-[#FFFFFF]  border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
           data-bs-dismiss="modal">
           Close
         </button>
@@ -116,9 +107,9 @@ function Services() {
     <div className="z-10 modal fade fixed sm:top-0 top-5 left-0 hidden w-screen h-screen outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter2" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
   <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white dark:bg-dark bg-clip-padding rounded-md outline-none text-current">
-      <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 rounded-t-md">
+      <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 pt-6 md:pt-2 rounded-t-md">
       <button type="button"
-          className="btn-close border-4 border-midnight dark:border-white rounded-full box-content w-4 h-4 p-1 dark:text-test  opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:opacity-75 hover:no-underline"
+          className="btn-close border-4 border-purple dark:border-white rounded-full box-content w-4 h-4 p-1 dark:text-test  opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:opacity-75 hover:no-underline"
           data-bs-dismiss="modal" aria-label="Close"></button>
       <Image className='text-center w-full mt-4 rounded-2xl  hover:scale-95 transition duration-300 ease-in-out' src="/info-systems.jpg" alt="Vercel Logo" width={333} height={200} priority />
         <h5 className="text-xl font-medium leading-normal text-[#0f172a] dark:text-[#FFFFFF]" id="exampleModalScrollableLabel">
@@ -139,7 +130,7 @@ function Services() {
       <div
         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 rounded-b-md">
         <button type="button"
-          className="inline-block px-6 mb-2 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block px-6 mb-2 py-2.5 bg-purple text-[#000] dark:bg-[#FFFFFF] border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
           data-bs-dismiss="modal">
           Close
         </button>
@@ -150,9 +141,9 @@ function Services() {
 <div className="z-10 modal fade fixed sm:top-0 top-5 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter3" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
   <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white dark:bg-dark bg-clip-padding rounded-md outline-none text-current">
-      <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 rounded-t-md">
+      <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 pt-6 md:pt-2 rounded-t-md">
       <button type="button"
-          className="btn-close border-4 border-midnight dark:border-white rounded-full box-content w-4 h-4 p-1 dark:text-white text-black opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+          className="btn-close border-4 border-purple dark:border-white rounded-full box-content w-4 h-4 p-1 dark:text-white text-black opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
           data-bs-dismiss="modal" aria-label="Close"></button>
       <Image className='text-center w-full mt-4 rounded-2xl  hover:scale-95 transition duration-300 ease-in-out' src="/Whats.jpg" alt="Vercel Logo" width={333} height={200} priority />
         <h5 className="text-xl font-medium leading-normal text-[#0f172a] dark:text-[#FFFFFF]" id="exampleModalScrollableLabel">
@@ -174,7 +165,7 @@ function Services() {
       <div
         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 rounded-b-md">
         <button type="button"
-          className="inline-block px-6 mb-2 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block px-6 mb-2 py-2.5 bg-purple text-[#000] dark:bg-[#FFFFFF] border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
           data-bs-dismiss="modal">
           Close
         </button>
@@ -185,9 +176,9 @@ function Services() {
 <div className="z-10 modal fade fixed sm:top-0 top-5 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter4" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
   <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white dark:bg-dark bg-clip-padding rounded-md outline-none text-current">
-      <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 rounded-t-md">
+      <div className="modal-header flex flex-col flex-shrink-0 items-center justify-between p-4 pt-6 md:pt-2 rounded-t-md">
       <button type="button"
-          className="btn-close border-4 border-midnight dark:border-white rounded-full box-content w-4 h-4 p-1 dark:text-white text-black opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+          className="btn-close border-4 border-purple dark:border-white rounded-full box-content w-4 h-4 p-1 dark:text-white text-black opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
           data-bs-dismiss="modal" aria-label="Close"></button>
       <Image className='text-center w-full mt-4 rounded-2xl  hover:scale-95 transition duration-300 ease-in-out' src="/software-maintenance-min.jpg" alt="Vercel Logo" width={333} height={200} priority />
         <h5 className="text-xl font-medium leading-normal text-[#0f172a] dark:text-[#FFFFFF]" id="exampleModalScrollableLabel">
@@ -207,7 +198,7 @@ function Services() {
       <div
         className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 rounded-b-md">
         <button type="button"
-          className="inline-block px-6 mb-2 py-2.5 bg-midnight dark:bg-[#FFFFFF] text-purple border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="inline-block px-6 mb-2 py-2.5 bg-purple text-[#000] dark:bg-[#FFFFFF] border-purple font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
           data-bs-dismiss="modal">
           Close
         </button>

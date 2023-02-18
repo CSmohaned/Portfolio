@@ -16,7 +16,7 @@ hiddenPhoto: {
 visiblePhoto: {
   opacity: 1,
   x: "0px",
-  transition: {delay: 1.5}
+  transition: {delay: 1.5,duration: 1.5}
 },
 visible: {
     opacity: 1,

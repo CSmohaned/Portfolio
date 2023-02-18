@@ -5,19 +5,19 @@ import { motion} from 'framer-motion';
 const show = {
     hidden: {
       opacity: 0,
-      y: "100vh"
+      x: "100vw"
   },
   hiddenText: {
     opacity: 0,
   },
   visibleText: {
     opacity: 1,
-    transition: {delay: 1.5}
+    transition: {delay: 2.5}
   },
   visible: {
       opacity: 1,
-      y: "0px",
-      transition: {delay: .5}
+      x: "0px",
+      transition: {delay: .5,duration: 1}
   }
   }
   const spring = {
