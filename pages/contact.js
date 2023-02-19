@@ -105,7 +105,7 @@ function Contact() {
      }
    };
     return(
-        <section id="contact" className="flex flex-col justify-start  w-screen bg-light dark:bg-silver pt-5 overflow-hidden">
+        <section id="contact" className="flex flex-col justify-start  w-screen bg-light dark:bg-silver pt-20 overflow-hidden">
     <h2 className="text-center font-bold text-4xl text-[#666666] dark:text-[#FFFFFF]">Contact Me</h2>
     <span className="text-center font-normal text-sm pt-2">Get in touch</span>
       <motion.div variants={show} initial="hidden" animate="visible" className="lg:flex-col lg:px-20 lg:justify-center lg:items-center flex flex-row py-20 px-28 sm:px-5 md:px-10">

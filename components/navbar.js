@@ -76,7 +76,7 @@ function Navbar() {
             {currentTheme ==="dark" && <Image alt="Mo-logos_black" src="/Mo-logos_white.png" width={180} height={14} />}
             
             </div>
-            <div id="demo-right" className="md:flex flex flex-row justify-end items-center">
+            <div id="demo-right" className="md:flex flex flex-row justify-end items-center mr-2">
             <motion.button transition={spring}  whileHover={{scale: 1.1}}>
                 <Link className="text-[#1A1A1A] dark:text-[#FFFF] md:hidden hover:text-purple hover:dark:text-purple mr-6 flex flex-row" href="#home" scroll={false}><HomeIcon className="h-5 w-5 mr-2 text-[#1A1A1A] dark:text-[#FFFF]"/>Home</Link>
             </motion.button>   

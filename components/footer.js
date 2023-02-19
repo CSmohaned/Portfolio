@@ -8,7 +8,7 @@ const spring = {
 }
 function Footer() {
     return(
-        <footer className="sm:mb-14 sm:flex sm:flex-col sm:justify-between sm:h-60  sm:items-center flex flex-row items-start justify-between px-20 h-24 w-screen pt-8 dark:bg-dark overflow-hidden">
+        <footer className="sm:mb-14 sm:flex sm:flex-col sm:justify-between sm:h-60 md:h-40  sm:items-center flex flex-row items-start justify-between px-20 h-24 w-screen pt-8 dark:bg-dark overflow-hidden">
         <div className="flex flex-col sm:items-center sm:justify-center sm:pl-2">
           <h1>Mohanad</h1>
           <p>Frontend Developer</p>
@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <p className='text-xs text-silver dark:text-white pt-5 text-center sm:mb-4'>© All right reserved</p>
         </div>
-        <div className="flex flex-row ">
+        <div className="flex flex-row sm:mb-3">
         <motion.button transition={spring}  whileHover={{scaleX: 1.1}}>
         <Link href="https://www.facebook.com/profile.php?id=100000451353996" scroll={false}><BsFacebook className='mr-3 dark:text-purple'/></Link>
         </motion.button>

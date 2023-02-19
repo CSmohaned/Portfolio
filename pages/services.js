@@ -22,12 +22,12 @@ const spring = {
 
 function Services() {
     return(
-        <section id="services"className="flex flex-col justify-start w-screen h-full bg-light dark:bg-dark pt-5">
+        <section id="services"className="flex flex-col justify-start w-screen h-full bg-light dark:bg-dark pt-20">
         <h2 className="text-center font-bold text-4xl text-[#666666] dark:text-[#FFFFFF]">Services</h2>
         <span className="text-center font-normal text-sm pt-2">What I offer</span>
         <motion.div variants={show} initial="hiddenPhoto" animate="visiblePhoto" className='flex flex-row justify-evenly items-center md:flex-col'>
         <div className="flex justify-center w-full p-8">
-        <motion.div transition={spring}  whileHover={{scale: 1.1}} className="z-0 block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
+        <motion.div transition={spring}  whileHover={{scale:1.1}} className="z-0 block rounded-lg shadow-xl bg-white dark:bg-[#121212] w-4/5 p-6">
         <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2"><FaReact className="text-purple h-7 w-7"/></h5>
         <h2 className="text-[#1A1A1A] dark:text-[#FFFF] text-base mb-4">Dynamic Websites Development</h2>
         <div className='flex flex-row justify-start items-center'>
